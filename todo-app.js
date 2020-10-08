@@ -178,15 +178,15 @@ let newElement = (
   </div>
 );
 
-TinyReact.render(<WishList />, root);
+// TinyReact.render(<WishList />, root);
 
 // TinyReact.render(newElement, root);
 
-setTimeout(() => {
-  alert("Rerendering");
-  // TinyReact.render(<WishList />, root);
-  TinyReact.render(newElement, root);
-}, 4000);
+// setTimeout(() => {
+//   alert("Rerendering");
+//   // TinyReact.render(<WishList />, root);
+//   TinyReact.render(newElement, root);
+// }, 4000);
 
 
 //////******* TODO APP ***********/
@@ -470,4 +470,4 @@ class TodoApp extends TinyReact.Component {
   }
 }
 
-// TinyReact.render(<TodoApp />, root);
+TinyReact.render(<TodoApp />, root);
