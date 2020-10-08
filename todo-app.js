@@ -169,7 +169,7 @@ class WishList extends TinyReact.Component {
 
 }
 
-TinyReact.render(<WishList />, root);
+// TinyReact.render(<WishList />, root);
 
 let newElement = (
   <div>
@@ -178,15 +178,15 @@ let newElement = (
   </div>
 );
 
-//TinyReact.render(<WishList />, root);
+TinyReact.render(<WishList />, root);
 
 // TinyReact.render(newElement, root);
 
-// setTimeout(() => {
-//   alert("Rerendering");
-//   TinyReact.render(<WishList />, root);
-//   //TinyReact.render(newElement, root);
-// }, 4000);
+setTimeout(() => {
+  alert("Rerendering");
+  // TinyReact.render(<WishList />, root);
+  TinyReact.render(newElement, root);
+}, 4000);
 
 
 //////******* TODO APP ***********/
