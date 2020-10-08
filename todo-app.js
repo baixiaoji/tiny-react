@@ -19,7 +19,7 @@ var Step1 = (
   </div>
 );
 
-console.log(Step1);
+// console.log(Step1);
 
 // Step 5, 6
 // TinyReact.render(Step1, root);
@@ -68,12 +68,13 @@ const Greeting = function (props) {
   );
 }
 
-//TinyReact.render(<Greeting message="Good day!" />, root);
+console.log(Greeting.toString())
+TinyReact.render(<Greeting message="Good day!" />, root);
 
-// setTimeout(() => {
-//   alert("Re-rendering...");
-//   TinyReact.render(<Greeting message="Good Night!" />, root);
-// }, 4000);
+setTimeout(() => {
+  alert("Re-rendering...");
+  TinyReact.render(<Greeting message="Good Night!" />, root);
+}, 4000);
 
 // Stateful component
 class Alert extends TinyReact.Component {
