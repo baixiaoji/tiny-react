@@ -68,13 +68,13 @@ const Greeting = function (props) {
   );
 }
 
-console.log(Greeting.toString())
-TinyReact.render(<Greeting message="Good day!" />, root);
+// console.log(Greeting.toString())
+// TinyReact.render(<Greeting message="Good day!" />, root);
 
-setTimeout(() => {
-  alert("Re-rendering...");
-  TinyReact.render(<Greeting message="Good Night!" />, root);
-}, 4000);
+// setTimeout(() => {
+//   alert("Re-rendering...");
+//   TinyReact.render(<Greeting message="Good Night!" />, root);
+// }, 4000);
 
 // Stateful component
 class Alert extends TinyReact.Component {
@@ -104,7 +104,7 @@ class Alert extends TinyReact.Component {
   }
 }
 
-//TinyReact.render(<Alert message="Are you sure?" />, root);
+TinyReact.render(<Alert message="Are you sure?" />, root);
 
 // Diffing / Reconciliation of two stateful components
 
@@ -470,4 +470,4 @@ class TodoApp extends TinyReact.Component {
   }
 }
 
-TinyReact.render(<TodoApp />, root);
+// TinyReact.render(<TodoApp />, root);
