@@ -22,7 +22,7 @@ var Step1 = (
 console.log(Step1);
 
 // Step 5, 6
-TinyReact.render(Step1, root);
+// TinyReact.render(Step1, root);
 
 var Step2 = (
   <div>
@@ -37,10 +37,10 @@ var Step2 = (
   </div>
 );
 
-setTimeout(() => {
-  alert("Re-rendering...");
-  TinyReact.render(Step2, root);
-}, 4000);
+// setTimeout(() => {
+//   alert("Re-rendering...");
+//   TinyReact.render(Step2, root);
+// }, 4000);
 
 // Functional Component
 const Heart = (props) => <span style={props.style}>&hearts;</span>;
@@ -52,7 +52,7 @@ const Heart = (props) => <span style={props.style}>&hearts;</span>;
 // }
 
 
-//TinyReact.render(<Heart style="color:red" />, root);
+// TinyReact.render(<Heart style="color:red" />, root);
 
 const Button = (props) => <button onClick={props.onClick}>{props.children}</button>;
 
