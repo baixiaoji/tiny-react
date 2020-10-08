@@ -104,7 +104,7 @@ class Alert extends TinyReact.Component {
   }
 }
 
-TinyReact.render(<Alert message="Are you sure?" />, root);
+// TinyReact.render(<Alert message="Are you sure?" />, root);
 
 // Diffing / Reconciliation of two stateful components
 
@@ -123,7 +123,7 @@ class Stateful extends TinyReact.Component {
   }
 }
 
-//TinyReact.render(<Stateful title="Task 1" />, root);
+TinyReact.render(<Stateful title="Task 1" />, root);
 
 
 function update() {
