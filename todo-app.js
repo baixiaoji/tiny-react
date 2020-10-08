@@ -123,7 +123,7 @@ class Stateful extends TinyReact.Component {
   }
 }
 
-TinyReact.render(<Stateful title="Task 1" />, root);
+// TinyReact.render(<Stateful title="Task 1" />, root);
 
 
 function update() {
@@ -169,7 +169,7 @@ class WishList extends TinyReact.Component {
 
 }
 
-//TinyReact.render(<WishList />, root);
+TinyReact.render(<WishList />, root);
 
 let newElement = (
   <div>
