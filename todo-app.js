@@ -37,10 +37,10 @@ var Step2 = (
   </div>
 );
 
-// setTimeout(() => {
-//   alert("Re-rendering...");
-//   TinyReact.render(Step2, root);
-// }, 4000);
+setTimeout(() => {
+  alert("Re-rendering...");
+  TinyReact.render(Step2, root);
+}, 4000);
 
 // Functional Component
 const Heart = (props) => <span style={props.style}>&hearts;</span>;
